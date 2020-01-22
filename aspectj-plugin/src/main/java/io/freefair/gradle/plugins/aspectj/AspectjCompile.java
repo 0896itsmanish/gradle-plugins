@@ -46,7 +46,8 @@ public class AspectjCompile extends AbstractCompile {
     @Override
     @TaskAction
     protected void compile() {
-        getProject().delete(getDestinationDir());
+        // testtest
+        // getProject().delete(getDestinationDir());
 
         AspectJCompileSpec spec = createSpec();
         WorkResult result = getCompiler().execute(spec);
